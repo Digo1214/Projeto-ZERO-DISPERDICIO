@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-R" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desperdício Zero</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="login-view" class="view-container active">
+        <h2>Desperdício Zero - Login</h2>
+        <form id="login-form">
+          <input type="email" id="login-email" placeholder="Email" required />
+          <input
+            type="password"
+            id="login-senha"
+            placeholder="Senha"
+            required
+          />
+          <button type="submit">Entrar</button>
+        </form>
+        <p>Não tem conta? <a href="#" id="show-register">Registre-se</a></p>
+      </div>
+
+      <div id="register-view" class="view-container">
+        <h2>Registro</h2>
+        <div class="tabs">
+          <button class="tab-link active" data-tab="doador">Sou Doador</button>
+          <button class="tab-link" data-tab="receptor">Sou Receptor</button>
+        </div>
+
+        <form
+          id="register-doador-form"
+          class="tab-content active"
+          data-tab-content="doador"
+        >
+          <h3>Cadastro de Doador</h3>
+          <input
+            type="text"
+            id="doador-nome"
+            placeholder="Nome do Estabelecimento"
+            required
+          />
+          <input type="email" id="doador-email" placeholder="Email" required />
+          <input
+            type="password"
+            id="doador-senha"
+            placeholder="Senha"
+            required
+          />
+          <input type="text" id="doador-cnpj" placeholder="CNPJ" required />
+          <input
+            type="text"
+            id="doador-localizacao"
+            placeholder="Localização (Ex: Feira de Santana)"
+            required
+          />
+          <button type="submit">Registrar Doador</button>
+        </form>
+
+        <form
+          id="register-receptor-form"
+          class="tab-content"
+          data-tab-content="receptor"
+        >
+          <h3>Cadastro de Receptor</h3>
+          <input
+            type="text"
+            id="receptor-nome"
+            placeholder="Nome da Organização"
+            required
+          />
+          <input
+            type="email"
+            id="receptor-email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="password"
+            id="receptor-senha"
+            placeholder="Senha"
+            required
+          />
+          <input type="text" id="receptor-cnpj" placeholder="CNPJ" required />
+          <input
+            type="text"
+            id="receptor-localizacao"
+            placeholder="Localização (Ex: Feira de Santana)"
+            required
+          />
+          <button type="submit">Registrar Receptor</button>
+        </form>
+
+        <p>Já tem conta? <a href="#" id="show-login">Faça Login</a></p>
+      </div>
+
+      <div id="app-view" class="view-container">
+        <header>
+          <h2 id="welcome-message">Bem-vindo(a)!</h2>
+          <button id="logout-button">Sair</button>
+        </header>
+        <hr />
+
+        <div id="doador-dashboard" class="dashboard-panel">
+          <h3>Criar Nova Doação</h3>
+          <form id="create-doacao-form">
+            <input
+              type="text"
+              id="doacao-titulo"
+              placeholder="Título (Ex: Pães e Bolos)"
+              required
+            />
+            <textarea
+              id="doacao-descricao"
+              placeholder="Descrição (Ex: 5kg de pães variados)"
+              required
+            ></textarea>
+            <input
+              type="text"
+              id="doacao-localizacao"
+              placeholder="Localização de Retirada (Ex: Feira de Santana)"
+              required
+            />
+            <button type="submit">Publicar Doação</button>
+          </form>
+        </div>
+
+        <div id="receptor-dashboard" class="dashboard-panel">
+          <h3>Doações Disponíveis (Match)</h3>
+          <div id="doacoes-list"></div>
+        </div>
+      </div>
+
+      <div id="error-message" class="message error"></div>
+      <div id="success-message" class="message success"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
