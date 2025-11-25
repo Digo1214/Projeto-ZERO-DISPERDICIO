@@ -1,4 +1,4 @@
-# Projeto ZERO DISPERDICIO
+# Projeto ZERO DESPERDICIO
 
 Protótipo web focado em reduzir desperdício — interface em HTML/CSS/JavaScript e estrutura básica de servidor em Node.js.
 
@@ -12,7 +12,7 @@ Protótipo web focado em reduzir desperdício — interface em HTML/CSS/JavaScri
 
 ## Visão geral
 
-Esse repositório contém um protótipo chamado "Projeto ZERO DISPERDÍCIO" com uma interface frontend (index.html, script.js, style.css) e arquivos iniciais de backend (app.js) e pastas preparadas para rotas, modelos e middlewares. O objetivo é servir como base para uma aplicação que ajude a minimizar o desperdício por meio de funcionalidades de compartilhamento, registro e gerenciamento de recursos.
+Esse repositório contém um protótipo chamado "Projeto ZERO DESPERDÍCIO" com uma interface frontend (index.html, script.js, style.css) e arquivos iniciais de backend (app.js) e pastas preparadas para rotas, modelos e middlewares. O objetivo é servir como base para uma aplicação que ajude a minimizar o desperdício por meio de funcionalidades de compartilhamento, registro e gerenciamento de recursos.
 
 ## Funcionalidades (visão geral)
 
