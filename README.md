@@ -73,11 +73,10 @@ Esse repositório contém um protótipo chamado "Projeto ZERO DESPERDÍCIO" com 
 - Documentar endpoints da API (se houver)
 - Implementar testes automatizados
 - Adicionar exemplo de variáveis de ambiente e instruções de deploy
-- Incluir arquivo LICENSE
 
 ## Licença
 
-Este projeto não possui licença definida. Adicione um arquivo LICENSE se quiser permitir uso e distribuição públicos.
+Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) para detalhes.
 
 ## Contato
 
